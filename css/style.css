@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   height: 65px;
-  box-shadow: 0 0 10px #f2f2f2;
 }
 .header__logo {
   width: 163px;
@@ -10,6 +9,7 @@
 }
 
 .localisation {
+  box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.4);
   background-color: rgb(234, 234, 234);
   height: 47px;
 }
