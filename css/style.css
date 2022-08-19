@@ -9,4 +9,19 @@
   height: 28px;
 }
 
+.localisation {
+  background-color: rgb(234, 234, 234);
+  height: 47px;
+}
+.localisation__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.localisation__place {
+  padding-left: 5%;
+  font-weight: bold;
+  width: 138px;
+}
+
 /*# sourceMappingURL=style.css.map */

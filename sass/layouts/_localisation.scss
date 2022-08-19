@@ -1,0 +1,16 @@
+.localisation
+{
+    background-color: rgb(234, 234, 234);
+    height: 47px;
+    &__flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__place{
+        padding-left: 5%;
+        font-weight: bold;
+        width: 138px;
+    }
+}
