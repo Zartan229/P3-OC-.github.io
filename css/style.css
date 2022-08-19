@@ -1,19 +1,12 @@
 .header {
-  flex: 100%;
-  background-color: rgb(209, 38, 38);
+  display: flex;
+  justify-content: center;
+  height: 65px;
+  box-shadow: 0 0 10px #f2f2f2;
 }
 .header__logo {
-  height: 100px;
-}
-
-.form {
-  padding-bottom: 1.5rem;
-}
-
-.form__heading {
-  color: #fff;
-  text-shadow: 0.55rem 0.55rem #11af82;
-  padding: 1.5rem;
+  width: 163px;
+  height: 28px;
 }
 
 /*# sourceMappingURL=style.css.map */

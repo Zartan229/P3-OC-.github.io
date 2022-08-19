@@ -1,7 +1,10 @@
 .header{
-    flex: 100%;
-    background-color: rgb(209, 38, 38);
+    display: flex;
+    justify-content: center;
+    height: 65px;
+    box-shadow: 0 0 10px #f2f2f2;
     &__logo{
-        height: 100px;
+        width: 163px;
+        height: 28px;
     }
 }
