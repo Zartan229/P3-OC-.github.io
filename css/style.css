@@ -67,6 +67,37 @@ h1, h2, h3, h4, h5, h6
   color: white;
 }
 
+.fonctionnement__title {
+  margin-top: 48px;
+  margin-left: 5%;
+  font-size: 27px;
+}
+.fonctionnement__flex {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 287px;
+}
+.fonctionnement__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  border-radius: 35px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+  border: none;
+}
+.fonctionnement__number {
+  margin-left: -20px;
+  background-color: #9656DC;
+  border-radius: 10px;
+  padding-left: 6px;
+  padding-right: 7px;
+  padding-top: 3px;
+  color: white;
+}
+
 * {
   box-sizing: border-box;
 }
