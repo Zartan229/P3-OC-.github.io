@@ -1,5 +1,5 @@
 .fonctionnement{
-    
+    height: 393px;
     &__title{
         margin-top: 48px;
         margin-left: 5%;
@@ -29,7 +29,7 @@
             background-color: #f5edff;
             .fonctionnement__image
             {
-                color: #9656DC;
+                color: $colour-primary;
             }
             }
     
@@ -40,7 +40,7 @@
     }
     &__number{
         margin-left: -10px;
-        background-color: #9656DC;
+        background-color: $colour-primary;
         border-radius: 10px;
         padding-left: 6px;
         padding-right: 7px;

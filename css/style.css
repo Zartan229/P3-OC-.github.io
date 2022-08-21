@@ -12,6 +12,19 @@ h1, h2, h3, h4, h5, h6
     font-family: "Shrikhand", sans-serif;
 }
 */
+.presentation__btn {
+  background: linear-gradient(to bottom right, #FF79DA 0%, #9356DC);
+  border: none;
+  border-radius: 25px;
+  margin-top: unset;
+  margin-bottom: unset;
+  font-size: 19px;
+  width: 216px;
+  height: 51px;
+  padding-left: 9px;
+  color: white;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -58,19 +71,10 @@ h1, h2, h3, h4, h5, h6
   width: 86%;
   font-size: 20px;
 }
-.presentation__btn {
-  background: linear-gradient(to bottom right, #FF79DA 0%, #9356DC);
-  border: none;
-  border-radius: 25px;
-  margin-top: unset;
-  margin-bottom: unset;
-  font-size: 19px;
-  width: 216px;
-  height: 51px;
-  padding-left: 9px;
-  color: white;
-}
 
+.fonctionnement {
+  height: 393px;
+}
 .fonctionnement__title {
   margin-top: 48px;
   margin-left: 5%;
@@ -99,14 +103,14 @@ h1, h2, h3, h4, h5, h6
   background-color: #f5edff;
 }
 .fonctionnement__card:focus .fonctionnement__image {
-  color: #9656DC;
+  color: #9356DC;
 }
 .fonctionnement__image {
   color: gray;
 }
 .fonctionnement__number {
   margin-left: -10px;
-  background-color: #9656DC;
+  background-color: #9356DC;
   border-radius: 10px;
   padding-left: 6px;
   padding-right: 7px;
