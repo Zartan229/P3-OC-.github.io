@@ -48,30 +48,6 @@ h1, h2, h3, h4, h5, h6
   font-weight: bold;
 }
 
-.presentation {
-  background-color: #f6f6f6;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 287px;
-  text-align: center;
-  padding-bottom: 36px;
-  padding-top: 21px;
-}
-.presentation__title {
-  margin-top: unset;
-  margin-bottom: unset;
-  width: 75%;
-  font-size: 27px;
-}
-.presentation__text {
-  margin-top: unset;
-  margin-bottom: unset;
-  width: 86%;
-  font-size: 20px;
-}
-
 .fonctionnement {
   height: 393px;
 }
@@ -115,7 +91,31 @@ h1, h2, h3, h4, h5, h6
   padding-left: 6px;
   padding-right: 7px;
   padding-top: 3px;
-  color: white;
+  color: #fff;
+}
+
+.presentation {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 287px;
+  text-align: center;
+  padding-bottom: 36px;
+  padding-top: 21px;
+}
+.presentation__title {
+  margin-top: unset;
+  margin-bottom: unset;
+  width: 75%;
+  font-size: 27px;
+}
+.presentation__text {
+  margin-top: unset;
+  margin-bottom: unset;
+  width: 86%;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
