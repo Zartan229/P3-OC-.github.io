@@ -1,0 +1,22 @@
+{
+  "name": "livrable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zartan229/P3-OC-.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zartan229/P3-OC-.github.io/issues"
+  },
+  "homepage": "https://github.com/Zartan229/P3-OC-.github.io/blob/main/README.md",
+  "dependencies": {
+    "sass": "^1.54.5"
+  }
+}
