@@ -10,23 +10,21 @@ html {
   margin: auto;
 }
 
-/*
-h1, h2, h3, h4, h5, h6
-{
-    font-family: "Shrikhand", sans-serif;
+.logo {
+  font-family: "Shrikhand", sans-serif;
 }
-*/
+
 .presentation__btn {
   background: linear-gradient(to bottom right, #FF79DA 0%, #9356DC);
   border: none;
   border-radius: 25px;
   margin-top: unset;
   margin-bottom: unset;
-  font-size: 19px;
+  font-size: 16px;
   width: 216px;
   height: 51px;
-  padding-left: 9px;
   color: #fff;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 .header {
@@ -67,13 +65,13 @@ h1, h2, h3, h4, h5, h6
   margin-top: unset;
   margin-bottom: unset;
   width: 75%;
-  font-size: 27px;
+  font-size: 26px;
 }
 .presentation__text {
   margin-top: unset;
   margin-bottom: unset;
   width: 86%;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .fonctionnement {
@@ -101,7 +99,7 @@ h1, h2, h3, h4, h5, h6
   border: none;
   padding-right: 15%;
   background-color: #F6F6F6;
-  height: 60px;
+  height: 62px;
 }
 .fonctionnement__card:focus {
   background-color: #f5edff;
@@ -120,6 +118,10 @@ h1, h2, h3, h4, h5, h6
   padding-right: 7px;
   padding-top: 3px;
   color: #fff;
+}
+.fonctionnement__text {
+  font-size: 15px;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */

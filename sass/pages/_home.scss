@@ -12,13 +12,13 @@
         margin-top: unset;
         margin-bottom: unset;
         width: 75%;
-        font-size: 27px;
+        font-size: 26px;
     }
     &__text{
         margin-top: unset;
         margin-bottom: unset;
         width: 86%;
-        font-size: 20px;
+        font-size: 18px;
     }
 
 }
@@ -48,7 +48,7 @@
         border: none;
         padding-right: 15%;
         background-color: #F6F6F6;
-        height: 60px;
+        height: 62px;
         &:focus{
             background-color: #f5edff;
             .fonctionnement__image
@@ -70,5 +70,10 @@
         padding-right: 7px;
         padding-top: 3px;
         color: $colour-white;
+    }
+
+    &__text{
+        font-size: 15px;
+        font-weight: 600;
     }
 }
