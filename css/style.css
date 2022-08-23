@@ -50,6 +50,12 @@ html {
   font-weight: bold;
 }
 
+.footer {
+  background-color: #353535;
+  height: 197px;
+  color: #fff;
+}
+
 .presentation {
   background-color: #f6f6f6;
   display: flex;
@@ -97,7 +103,7 @@ html {
   border-radius: 18px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
   border: none;
-  padding-right: 15%;
+  padding-right: 20%;
   background-color: #F6F6F6;
   height: 62px;
 }
@@ -122,6 +128,54 @@ html {
 .fonctionnement__text {
   font-size: 15px;
   font-weight: 600;
+}
+
+.restaurant {
+  background-color: #F6F6F6;
+  height: 1226px;
+}
+.restaurant__title {
+  margin-left: 5%;
+  padding-top: 52px;
+}
+.restaurant__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.restaurant__card {
+  width: 338px;
+  background-color: white;
+  padding: 0.5%;
+  border-radius: 20px;
+  height: 252px;
+  margin-top: 6.4%;
+  box-shadow: 0 0 10px #f2f2f2;
+}
+.restaurant__conteneur-image {
+  height: 174px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px 15px 0px 0px;
+}
+.restaurant__image {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+.restaurant__conteneur-text {
+  padding: 6%;
+}
+.restaurant__name {
+  font-size: 13px;
+}
+.restaurant__place {
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
 }
 
 /*# sourceMappingURL=style.css.map */
