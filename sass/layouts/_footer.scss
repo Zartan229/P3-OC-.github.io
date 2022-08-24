@@ -2,4 +2,32 @@
     background-color: #353535;
     height: 197px;
     color: $colour-white;
+    &__logo{
+    font-family: "Shrikhand", sans-serif;
+    padding-top: 27px;
+    margin-left: 7%;
+    font-size: 18px;
+    }
+    &__flex{
+        display: flex;
+        justify-content: center;
+    }
+    &__tab {
+        display: flex;
+        width: 85%;
+        list-style-type: none;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 118px;
+        padding-top: 20px;
+        &__link{
+            text-decoration: none;
+            color: $colour-white;
+        }
+        
+    }
+    &__image{
+        width: 15px;
+        margin-right: 5px;
+    }
 }

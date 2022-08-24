@@ -55,6 +55,33 @@ html {
   height: 197px;
   color: #fff;
 }
+.footer__logo {
+  font-family: "Shrikhand", sans-serif;
+  padding-top: 27px;
+  margin-left: 7%;
+  font-size: 18px;
+}
+.footer__flex {
+  display: flex;
+  justify-content: center;
+}
+.footer__tab {
+  display: flex;
+  width: 85%;
+  list-style-type: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 118px;
+  padding-top: 20px;
+}
+.footer__tab__link {
+  text-decoration: none;
+  color: #fff;
+}
+.footer__image {
+  width: 15px;
+  margin-right: 5px;
+}
 
 .presentation {
   background-color: #f6f6f6;
@@ -142,6 +169,8 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  height: 1100px;
+  padding-top: 21px;
 }
 .restaurant__card {
   width: 338px;
@@ -149,7 +178,6 @@ html {
   padding: 0.5%;
   border-radius: 20px;
   height: 252px;
-  margin-top: 6.4%;
   box-shadow: 0 0 10px #f2f2f2;
 }
 .restaurant__conteneur-image {
