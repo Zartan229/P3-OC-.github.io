@@ -24,7 +24,10 @@
             text-decoration: none;
             color: $colour-white;
         }
-        
+    
+    }
+    &__link{
+        color: $colour-white;
     }
     &__image{
         width: 15px;

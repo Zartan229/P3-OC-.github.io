@@ -10,7 +10,12 @@ html {
   margin: auto;
 }
 
-.logo {
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo, .title {
   font-family: "Shrikhand", sans-serif;
 }
 
@@ -85,6 +90,9 @@ html {
 }
 .footer__tab__link {
   text-decoration: none;
+  color: #fff;
+}
+.footer__link {
   color: #fff;
 }
 .footer__image {
@@ -224,6 +232,23 @@ html {
 
 .background__image {
   width: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+.menu {
+  background-color: #F6F6F6;
+  height: 1196px;
+  z-index: 2;
+  border-radius: 35px 35px 0px 0px;
+  position: relative;
+  margin-top: -33px;
+}
+.menu__title {
+  padding-top: 36px;
+  margin-left: 6%;
+  font-weight: unset;
+  font-size: 27px;
 }
 
 /*# sourceMappingURL=style.css.map */

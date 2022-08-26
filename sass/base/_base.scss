@@ -11,6 +11,10 @@ html
     margin: auto;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
 @media (min-width: 767px){
 
 }
@@ -20,7 +24,7 @@ html
 }
 
 
-.logo 
+.logo, .title
 {
     font-family: "Shrikhand", sans-serif;
 }
