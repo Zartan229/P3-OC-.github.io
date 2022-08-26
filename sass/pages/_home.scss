@@ -117,10 +117,17 @@
         transition-timing-function: ease;
     }
     &__conteneur-text{
-        padding: 6%;
+        padding: 5%;
+        display: flex;
+        justify-content: space-between;
     }
-    &__name{
-        font-size: 13px;
+    &__text{
+        display: flex;
+        flex-flow: nowrap column;
+    }
+    &__heart{
+    display: flex;
+    align-items: center;
     }
     &__place{
         margin-top: 0.5%;
