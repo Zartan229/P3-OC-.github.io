@@ -31,6 +31,10 @@ a {
   color: #fff;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
 }
+.presentation__btn--commande {
+  width: 187px;
+  margin-top: 41px;
+}
 
 .header {
   display: flex;
@@ -219,7 +223,7 @@ a {
 }
 .restaurant__text {
   display: flex;
-  flex-flow: nowrap column;
+  flex-flow: wrap column;
 }
 .restaurant__heart {
   display: flex;
@@ -249,6 +253,62 @@ a {
   margin-left: 6%;
   font-weight: unset;
   font-size: 27px;
+}
+.menu__contener-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__heart {
+  margin-top: 33px;
+  margin-right: 37px;
+}
+.menu__second-title {
+  margin-top: 36px;
+  margin-left: 5%;
+}
+.menu__seconde-title--secondary {
+  margin-top: 29px;
+}
+.menu__starter-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  height: 253px;
+}
+.menu__starter-flex--secondary {
+  margin-top: 16px;
+}
+.menu__starter-flex--tertiary {
+  margin-top: 12px;
+}
+.menu__starter-card {
+  height: 71px;
+  margin-left: 4%;
+  margin-right: 3%;
+  border-radius: 17px;
+  display: flex;
+  padding-top: 10px;
+  padding-left: 8px;
+  justify-content: space-between;
+  text-align: left;
+}
+.menu__starter-contener {
+  display: flex;
+  flex-direction: column;
+}
+.menu__starter-text {
+  margin-top: 5px;
+}
+.menu__starter-price {
+  margin-top: 27px;
+  margin-right: 19px;
+  font-weight: 700;
+}
+.menu .commande {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -19,4 +19,61 @@
         font-weight: unset;
         font-size: 27px;
     }
+    &__contener-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__heart{
+        margin-top: 33px;
+        margin-right: 37px;
+    }
+    &__second-title{
+        margin-top: 36px;
+        margin-left: 5%;
+        
+    }
+    &__seconde-title--secondary{
+        margin-top: 29px;
+    }
+    &__starter-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 10px;
+        height: 253px;
+    }
+    &__starter-flex--secondary{
+        margin-top: 16px;
+    }
+    &__starter-flex--tertiary{
+        margin-top: 12px;
+    }
+    &__starter-card{
+        height: 71px;
+        margin-left: 4%;
+        margin-right: 3%;
+        border-radius: 17px;
+        display: flex;
+        padding-top: 10px;
+        padding-left: 8px;;
+        justify-content: space-between;
+        text-align: left;
+    }
+    &__starter-contener{
+        display: flex;
+        flex-direction: column;
+    }
+    &__starter-text{
+        margin-top: 5px;
+    }
+    &__starter-price{
+        margin-top: 27px;
+        margin-right: 19px;
+        font-weight: 700;
+    }
+    .commande{
+        display: flex;
+        justify-content: center;
+    }
 }
