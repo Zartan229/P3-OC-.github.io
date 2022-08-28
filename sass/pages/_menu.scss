@@ -59,6 +59,9 @@
         padding-left: 8px;;
         justify-content: space-between;
         text-align: left;
+        background-color: $colour-white;
+        border: unset;
+        @include menu-shadow;
     }
     &__starter-contener{
         display: flex;
