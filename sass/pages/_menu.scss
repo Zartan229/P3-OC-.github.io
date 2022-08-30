@@ -13,6 +13,9 @@
     border-radius: 35px 35px 0px 0px;
     position: relative;
     margin-top: -33px;
+    &--height{
+        height: 1274px;
+    }
     &__title{
         padding-top: 36px;
         margin-left: 6%;
@@ -28,6 +31,8 @@
         margin-top: 33px;
         margin-right: 37px;
     }
+}
+.starter{
     &__second-title{
         margin-top: 36px;
         margin-left: 5%;
@@ -36,20 +41,24 @@
     &__seconde-title--secondary{
         margin-top: 29px;
     }
-    &__starter-flex{
+    &__flex{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         margin-top: 10px;
         height: 253px;
     }
-    &__starter-flex--secondary{
+    &__flex--secondary{
         margin-top: 16px;
     }
-    &__starter-flex--tertiary{
+    &__flex--tertiary{
         margin-top: 12px;
     }
-    &__starter-card{
+    &__flex--more{
+        height: 334px;
+    }
+}
+.card{
         height: 71px;
         margin-left: 4%;
         margin-right: 3%;
@@ -62,21 +71,21 @@
         background-color: $colour-white;
         border: unset;
         @include menu-shadow;
-    }
-    &__starter-contener{
+    
+    &__contener{
         display: flex;
         flex-direction: column;
     }
-    &__starter-text{
+    &__text{
         margin-top: 5px;
     }
-    &__starter-price{
+    &__price{
         margin-top: 27px;
         margin-right: 19px;
         font-weight: 700;
     }
+}
     .commande{
         display: flex;
         justify-content: center;
     }
-}

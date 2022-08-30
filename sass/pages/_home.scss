@@ -22,7 +22,7 @@
     }
 
 }
-.fonctionnement{
+.info{
     height: 393px;
     &__title{
         margin-top: 48px;
@@ -51,7 +51,7 @@
         height: 62px;
         &:focus{
             background-color: #f5edff;
-            .fonctionnement__image
+            .info__image
             {
                 color: $colour-primary;
             }
