@@ -275,8 +275,7 @@ a {
   flex-flow: wrap column;
 }
 .restaurant__heart {
-  display: flex;
-  align-items: center;
+  padding-top: 15px;
 }
 .restaurant__place {
   margin-top: 0.5%;
