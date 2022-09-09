@@ -46,6 +46,55 @@ a {
   animation-delay: 0.6s;
 }
 
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  z-index: 3;
+}
+
+.fa-heart-solid {
+  opacity: 0;
+  transition-duration: 0.5s;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA)); /*ON DEFINI UN BACKGROUND*/
+  -webkit-background-clip: text; /*ON MET LE BACKGROUND SUR LE TEXTE*/
+  -webkit-text-fill-color: transparent; /*POUR QUE LE BACKGROUND S'AFFICHE SUR LE TEXTE ON REND LE TEXTE TRANSPARENT*/
+}
+
+.container > .fa-heart {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  z-index: 3;
+}
+
+.fa-heart {
+  font-size: 26px;
+}
+
+/*QUAND LA CHECKBOX EST CHECK*/
+input:checked ~ .fa-heart-regular {
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+
+/*QUAND LA CHECKBOX EST CHECK*/
+input:checked ~ .fa-heart-solid {
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+
 .presentation__btn {
   background: linear-gradient(to bottom right, #FF79DA 0%, #9356DC);
   border: none;
