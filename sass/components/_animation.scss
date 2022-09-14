@@ -26,7 +26,11 @@ $number_menu: 4;
   align-items: center;
   justify-content: center;
   padding: 15px;
-  z-index: 3
+  z-index: 3;
+  &--menu{
+    margin-right: 9%;
+    margin-top: 30px;
+  }
 }
 
 .fa-heart-solid{
