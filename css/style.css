@@ -95,6 +95,67 @@ input:checked ~ .fa-heart-solid {
   opacity: 1;
 }
 
+#container {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader {
+  animation-name: blank;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes blank {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.1%;
+  }
+  80% {
+    opacity: 0.8%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animation {
+  0% {
+    stroke-dasharray: 1 98;
+    stroke-dashoffset: -105;
+    opacity: 1;
+  }
+  50% {
+    stroke-dasharray: 80 10;
+    stroke-dashoffset: -160;
+    opacity: 0.75;
+  }
+  100% {
+    stroke-dasharray: 1 98;
+    stroke-dashoffset: -300;
+    opacity: 0;
+    display: none;
+  }
+}
+#spinner {
+  transform-origin: center;
+  animation-name: animation;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  fill: transparent;
+  stroke: #FF79DA;
+  stroke-width: 7px;
+  stroke-linecap: round;
+  filter: url(#shadow);
+}
+
 .presentation__btn {
   background: linear-gradient(to bottom right, #FF79DA 0%, #9356DC);
   border: none;
