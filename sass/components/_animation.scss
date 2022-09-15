@@ -1,54 +1,53 @@
- @keyframes fade-in-bottom {
-    0% {
-      transform: translateY(10px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+@keyframes fade-in-bottom {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
   }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
-.menu__transformation{
-$number_menu: 4;
-  @for $i from 1 through $number_menu { 
-    &-#{$i} { 
+.menu__transformation {
+  $number_menu: 4;
+  @for $i from 1 through $number_menu {
+    &-#{$i} {
       animation: fade-in-bottom 1s ease-in-out both;
       animation-delay: $i * 0.15s;
     }
   }
 }
 
-
-.container{
+.container {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 15px;
   z-index: 3;
-  &--menu{
+  &--menu {
     margin-right: 9%;
     margin-top: 30px;
   }
 }
 
-.fa-heart-solid{
+.fa-heart-solid {
   opacity: 0;
   transition-duration: 0.5s;
-  background: -webkit-gradient(linear, left top, left bottom, from($colour-primary), to($colour-secondary));/*ON DEFINI UN BACKGROUND*/
-  -webkit-background-clip: text;/*ON MET LE BACKGROUND SUR LE TEXTE*/
-  -webkit-text-fill-color: transparent;/*POUR QUE LE BACKGROUND S'AFFICHE SUR LE TEXTE ON REND LE TEXTE TRANSPARENT*/
+  background: -webkit-gradient(linear, left top, left bottom, from($colour-primary), to($colour-secondary)); /*ON DEFINI UN BACKGROUND*/
+  -webkit-background-clip: text; /*ON MET LE BACKGROUND SUR LE TEXTE*/
+  -webkit-text-fill-color: transparent; /*POUR QUE LE BACKGROUND S'AFFICHE SUR LE TEXTE ON REND LE TEXTE TRANSPARENT*/
 }
 
-.container>.fa-heart{
+.container > .fa-heart {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-input{
+input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -56,7 +55,7 @@ input{
   height: 20px;
   z-index: 3;
 }
-.fa-heart{
+.fa-heart {
   font-size: 26px;
 }
 /*QUAND LA CHECKBOX EST CHECK*/
@@ -66,7 +65,7 @@ input:checked ~ .fa-heart-regular {
 }
 
 /*QUAND LA CHECKBOX EST CHECK*/
-input:checked ~ .fa-heart-solid{
+input:checked ~ .fa-heart-solid {
   transition-duration: 0.5s;
   opacity: 1;
 }
@@ -77,24 +76,23 @@ input:checked ~ .fa-heart-solid{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
-.loader{
+.loader {
   animation-name: blank;
   animation-duration: 3s;
   animation-fill-mode: forwards;
-
 }
 
 @keyframes blank {
   0% {
     opacity: 0;
   }
-  30%{
+  30% {
     opacity: 0.1%;
   }
-  80%{
+  80% {
     opacity: 0.8%;
   }
   100% {
@@ -128,10 +126,61 @@ input:checked ~ .fa-heart-solid{
   animation-timing-function: cubic-bezier;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  fill:transparent;
+  fill: transparent;
   stroke: $colour-secondary;
   stroke-width: 7px;
   stroke-linecap: round;
-  filter:url(#shadow);
-  
+  filter: url(#shadow);
+}
+
+.teste {
+  background-color: $colour-tertiary;
+  width: 0%;
+  height: 117%;
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $colour-white;
+  border-radius: 0px 17px 17px 0px;
+}
+.card:hover .slide-left {
+  animation: slide-left 0.5s ease-in-out both;
+}
+
+.card:hover .rotate-center {
+  animation: rotate-center 0.6s ease-in-out both;
+}
+.card:not(:hover) .slide-right {
+  animation: slide-right 0.5s ease-in-out both;
+}
+.check
+{
+  font-size: 26px;
+}
+@keyframes slide-right {
+  0% {
+    width: 20%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

@@ -71,13 +71,26 @@
   background-color: $colour-white;
   border: unset;
   @include menu-shadow;
+  overflow: hidden;
 
   &__contener {
     display: flex;
     flex-direction: column;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 82%;
+  }
+  &__title{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
   &__text {
     margin-top: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
   &__price {
     margin-top: 27px;
