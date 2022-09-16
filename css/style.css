@@ -228,6 +228,10 @@ input:checked ~ .fa-heart-solid {
   width: 187px;
   margin-top: 41px;
 }
+.presentation__btn:hover {
+  filter: brightness(115%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
 
 .header {
   display: flex;
