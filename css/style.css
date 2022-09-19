@@ -162,7 +162,7 @@ input:checked ~ .fa-heart-solid {
 
 .teste {
   background-color: #99E2D0;
-  width: 0%;
+  width: 0;
   height: 117%;
   margin-top: -10px;
   display: flex;
