@@ -28,7 +28,7 @@
       <main>
         <section class="localisation">
           <i class="localisation__pin fa-solid fa-location-dot"></i>
-          <p class="localisation__place">Paris, Belleville</p>
+          <h2 class="localisation__place">Paris, Belleville</h2>
         </section>
         <section class="presentation">
           <h2 class="presentation__title">Réservez le menu qui vous convient</h2>
@@ -38,21 +38,21 @@
         <section class="info">
           <h2 class="info__title">Fonctionnement</h2>
           <div class="info__flex">
-            <button class="info__card info__card--active">
+            <a class="info__card info__card--active">
               <div class="info__number">1</div>
               <i class="info__image fa-solid fa-mobile"></i>
               <h3 class="info__text">Choisissez un restaurant</h3>
-            </button>
-            <button class="info__card">
+            </a>
+            <a class="info__card">
               <div class="info__number">2</div>
-              <i class="info__image fa-solid fa-bars" alt="menu hamburger"></i>
+              <i class="info__image fa-solid fa-bars"></i>
               <h3 class="info__text">Composez votre menu</h3>
-            </button>
-            <button class="info__card">
+            </a>
+            <a class="info__card">
               <div class="info__number">3</div>
-              <i class="info__image fa-solid fa-store" alt="magasin"></i>
+              <i class="info__image fa-solid fa-store"></i>
               <h3 class="info__text">Dégustez au restaurant</h3>
-            </button>
+            </a>
           </div>
         </section>
         <section class="restaurant">
@@ -70,13 +70,13 @@
                     <h3 class="restaurant__name">La palette du goût</h3>
                     <p class="restaurant__place">Ménilmontant</p>
                   </div>
-                  <div class="container">
-                    <input type="checkbox" />
-                    <i class="fa-regular fa-heart-regular fa-heart"> </i>
-                    <i class="fa-solid fa-heart-solid fa-heart"> </i>
-                  </div>
                 </div>
               </a>
+              <div class="container">
+                <input type="checkbox" />
+                <i class="fa-regular fa-heart-regular fa-heart"> </i>
+                <i class="fa-solid fa-heart-solid fa-heart"> </i>
+              </div>
             </div>
             <div class="restaurant__card">
               <a href="./La_note_enchantée.html">
@@ -88,13 +88,13 @@
                     <h3 class="restaurant__name">La note enchantée</h3>
                     <p class="restaurant__place">Charonne</p>
                   </div>
-                  <div class="container">
-                    <input type="checkbox" />
-                    <i class="fa-regular fa-heart-regular fa-heart"> </i>
-                    <i class="fa-solid fa-heart-solid fa-heart"> </i>
-                  </div>
                 </div>
               </a>
+              <div class="container">
+                <input type="checkbox" />
+                <i class="fa-regular fa-heart-regular fa-heart"> </i>
+                <i class="fa-solid fa-heart-solid fa-heart"> </i>
+              </div>
             </div>
             <div class="restaurant__card">
               <a href="./A_la_francaise.html">
@@ -106,33 +106,33 @@
                     <h3 class="restaurant__name">A la française</h3>
                     <p class="restaurant__place">Cité Rouge</p>
                   </div>
-                  <div class="container">
-                    <input type="checkbox" />
-                    <i class="fa-regular fa-heart-regular fa-heart"> </i>
-                    <i class="fa-solid fa-heart-solid fa-heart"> </i>
+                </div>
+              </a>
+              <div class="container">
+                <input type="checkbox" />
+                <i class="fa-regular fa-heart-regular fa-heart"> </i>
+                <i class="fa-solid fa-heart-solid fa-heart"> </i>
+              </div>
+            </div>
+
+            <div class="restaurant__card">
+              <a>
+                <div class="restaurant__conteneur-image">
+                  <img class="restaurant__image" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image restau" />
+                </div>
+                <div class="restaurant__conteneur-text">
+                  <div class="restaurant__text">
+                    <h3 class="restaurant__name">Le délice des sens</h3>
+                    <p class="restaurant__place">Folie-Méricourt</p>
                   </div>
                 </div>
               </a>
+              <div class="container">
+                <input type="checkbox" />
+                <i class="fa-regular fa-heart-regular fa-heart"> </i>
+                <i class="fa-solid fa-heart-solid fa-heart"> </i>
+              </div>
             </div>
-          
-          <div class="restaurant__card">
-            <a>
-              <div class="restaurant__conteneur-image">
-                <img class="restaurant__image" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image restau" />
-              </div>
-              <div class="restaurant__conteneur-text">
-                <div class="restaurant__text">
-                  <h3 class="restaurant__name">Le délice des sens</h3>
-                  <p class="restaurant__place">Folie-Méricourt</p>
-                </div>
-                <div class="container">
-                  <input type="checkbox" />
-                  <i class="fa-regular fa-heart-regular fa-heart"> </i>
-                  <i class="fa-solid fa-heart-solid fa-heart"> </i>
-                </div>
-              </div>
-            </a>
-          </div>
           </div>
         </section>
       </main>
@@ -140,12 +140,8 @@
         <p class="footer__logo">ohmyfood</p>
         <div class="footer__flex">
           <ul class="footer__tab">
-            <li>
-              <i class="fa-solid fa-utensils footer__image fa-xs" alt="coeur font awesome"></i><a class="footer__link">Proposer un restaurant</a>
-            </li>
-            <li>
-              <i class="fa-solid fa-handshake-angle footer__image fa-xs" alt="coeur font awesome"></i><a class="footer__link">Devenir partenaire</a>
-            </li>
+            <li><i class="fa-solid fa-utensils footer__image fa-xs"></i><a class="footer__link">Proposer un restaurant</a></li>
+            <li><i class="fa-solid fa-handshake-angle footer__image fa-xs"></i><a class="footer__link">Devenir partenaire</a></li>
             <li><a class="footer__link">Mentions légales</a></li>
             <li><a href="mailto:addresse.mail.fr" class="footer__link">Contact</a></li>
           </ul>

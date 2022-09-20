@@ -51,9 +51,8 @@ a {
 .container {
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
+  margin-left: 86%;
+  margin-top: -53px;
   z-index: 3;
 }
 .container--menu {
@@ -152,7 +151,6 @@ input:checked ~ .fa-heart-solid {
   transform-origin: center;
   animation-name: animation;
   animation-duration: 3s;
-  animation-timing-function: cubic-bezier;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   fill: transparent;
@@ -265,6 +263,7 @@ input:checked ~ .fa-heart-solid {
 .localisation__place {
   padding-left: 5%;
   font-weight: bold;
+  font-size: 16px;
 }
 
 .footer {
@@ -354,10 +353,10 @@ input:checked ~ .fa-heart-solid {
   background-color: #f6f6f6;
   height: 62px;
 }
-.info__card:focus {
+.info__card:hover {
   background-color: #f5edff;
 }
-.info__card:focus .info__image {
+.info__card:hover .info__image {
   color: #9356dc;
 }
 .info__image {

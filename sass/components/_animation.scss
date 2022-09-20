@@ -22,9 +22,8 @@
 .container {
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
+  margin-left: 86%;
+  margin-top: -53px;
   z-index: 3;
   &--menu {
     margin-right: 9%;
@@ -123,7 +122,7 @@ input:checked ~ .fa-heart-solid {
   transform-origin: center;
   animation-name: animation;
   animation-duration: 3s;
-  animation-timing-function: cubic-bezier;
+
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   fill: transparent;
