@@ -1,6 +1,6 @@
-.presentation{
-    &__btn{
-    background: linear-gradient(to bottom right, $colour-secondary 0%,  $colour-primary);
+.presentation {
+  &__btn {
+    background: linear-gradient(to bottom right, $colour-secondary 0%, $colour-primary);
     border: none;
     border-radius: 25px;
     margin-top: unset;
@@ -9,14 +9,14 @@
     width: 216px;
     height: 51px;
     color: $colour-white;
-    box-shadow: 0px 4px 10px 0px rgb(0 0 0 / 30%);    
-    }
-    &__btn--commande{
-        width: 187px;
-        margin-top: 41px;
-    }
-    &__btn:hover{
-        filter: brightness(115%);
-        box-shadow: 0px 4px 10px 0px rgb(0 0 0 / 50%);
-    }
+    box-shadow: 0px 4px 10px 0px rgb(0 0 0 / 30%);
+  }
+  &__btn--commande {
+    width: 187px;
+    margin-top: 41px;
+  }
+  &__btn:hover {
+    filter: brightness(115%);
+    box-shadow: 0px 4px 10px 0px rgb(0 0 0 / 50%);
+  }
 }

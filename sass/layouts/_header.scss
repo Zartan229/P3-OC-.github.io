@@ -1,18 +1,18 @@
-.header{
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 62px;
+  &--page-menu {
+    justify-content: space-evenly;
+    margin-right: 15%;
+  }
+  &__logo {
+    flex: 100%;
+    height: 28px;
+  }
+  &__arrow {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 62px;
-    &--page-menu{
-        justify-content: space-evenly;
-        margin-right: 15%;
-    }
-    &__logo{
-        flex: 100%;
-        height: 28px;
-    }
-    &__arrow{
-        display: flex;
-        align-items: center;
-    }
+  }
 }

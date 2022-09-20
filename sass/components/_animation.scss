@@ -154,8 +154,7 @@ input:checked ~ .fa-heart-solid {
 .card:not(:hover) .slide-right {
   animation: slide-right 0.5s ease-in-out both;
 }
-.check
-{
+.check {
   font-size: 26px;
 }
 @keyframes slide-right {
