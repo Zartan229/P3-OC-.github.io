@@ -56,8 +56,9 @@ a {
   z-index: 3;
 }
 .container--menu {
-  margin-right: 9%;
-  margin-top: 30px;
+  margin-right: 16%;
+  margin-top: 5px;
+  margin-left: unset;
 }
 
 .fa-heart-solid {
