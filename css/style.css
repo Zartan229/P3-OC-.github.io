@@ -483,6 +483,11 @@ input:checked ~ .fa-heart-solid {
 .menu--height {
   height: 1274px;
 }
+@media (min-width: 991px) {
+  .menu--height {
+    height: 1336px;
+  }
+}
 .menu__title {
   padding-top: 36px;
   margin-left: 6%;

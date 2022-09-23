@@ -21,6 +21,9 @@
   }
   &--height {
     height: 1274px;
+    @media (min-width: 991px) {
+      height: 1336px;
+    }
   }
   &__title {
     padding-top: 36px;
