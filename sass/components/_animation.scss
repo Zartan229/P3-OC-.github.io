@@ -29,6 +29,9 @@
     margin-right: 16%;
     margin-top: 5px;
     margin-left: unset;
+    @media (min-width: 991px) {
+      margin-right: 20%;
+    }
   }
 }
 

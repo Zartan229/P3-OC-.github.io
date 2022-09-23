@@ -6,6 +6,9 @@
   &--page-menu {
     justify-content: space-evenly;
     margin-right: 15%;
+    @media (min-width: 991px) {
+      margin-right: 20%;
+    }
   }
   &__logo {
     flex: 100%;
