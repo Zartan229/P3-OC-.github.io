@@ -391,6 +391,11 @@ input:checked ~ .fa-heart-solid {
   background-color: #f6f6f6;
   height: 1226px;
 }
+@media (min-width: 991px) {
+  .restaurant {
+    height: 878px;
+  }
+}
 .restaurant__title {
   margin-left: 5%;
   padding-top: 52px;
@@ -401,6 +406,15 @@ input:checked ~ .fa-heart-solid {
   justify-content: space-evenly;
   height: 1100px;
   padding-top: 21px;
+}
+@media (min-width: 991px) {
+  .restaurant__flex {
+    height: 698px;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
 }
 .restaurant__card {
   width: 338px;
