@@ -364,6 +364,11 @@ input:checked ~ .fa-heart-solid {
   background-color: #f6f6f6;
   height: 62px;
 }
+@media (min-width: 991px) {
+  .info__card {
+    width: 65%;
+  }
+}
 .info__card:hover {
   background-color: #f5edff;
 }
@@ -411,6 +416,7 @@ input:checked ~ .fa-heart-solid {
   .restaurant__flex {
     height: 698px;
     flex-direction: column;
+    align-items: center;
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
