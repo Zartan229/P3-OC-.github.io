@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -49,7 +50,11 @@ a {
 }
 
 .container {
-  position: relative;
+  position: relative; /*Mise en position relative
+pour que les "enfant" 
+puissent prendre 
+une positio absolue et hériter 
+de la taille du container*/
   display: flex;
   margin-left: 86%;
   margin-top: -53px;
@@ -67,43 +72,85 @@ a {
 }
 
 .fa-heart-solid {
-  opacity: 0;
+  opacity: 0; /*Fa-heart solied est placer a 0 d'opaciter pour être dissimuler.*/
   transition-duration: 0.5s;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da)); /*ON DEFINI UN BACKGROUND*/
-  -webkit-background-clip: text; /*ON MET LE BACKGROUND SUR LE TEXTE*/
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da)); /*Le webkit permet de définir un Linear-grandient*/
+  -webkit-background-clip: text; /*ON MET LE BACKGROUND SUR LE TEXT*/
   -webkit-text-fill-color: transparent; /*POUR QUE LE BACKGROUND S'AFFICHE SUR LE TEXTE ON REND LE TEXTE TRANSPARENT*/
 }
 
-.container > .fa-heart {
+/*https://developer.mozilla.org/fr/docs/Web/CSS/background-clip : background-clip et text-fill-color travail en commun pour permettre l'affichage du backgroound
+  - Brackround-clip met le backgorund sur le texte
+  - text-fill-color est utiliser pour mettre le texte transparent pour afficher le bacgkround."Pourqu'il soit visible Sinon noir"*/
+.container > .fa-heart { /*Permet au coeur d'hériter du container*/
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  width: 20px;
+/*There are four different combinators in CSS:
+
+Descendant selector (space)
+
+Descendant Selector: The descendant selector matches all elements that are descendants of a specified element.
+The following example selects all <p> elements inside <div> elements:
+
+div p {
+ background-color: red;
+}
+
+Child selector (>)
+Child Selector: The child selector selects all elements that are the children of a specified element.
+The following example selects all <p> elements that are children of a <div> element:
+
+div > p {
+ background-color: red;
+}
+
+Adjacent sibling selector (+)
+Adjacent Sibling Selector: The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element. 
+Sibling elements must have the same parent element, and “adjacent” means “immediately following”.
+The following example selects all <p> elements that are placed immediately after <div> elements:
+
+div + p {
+ background-color: red;
+}
+
+General sibling selector (~)
+General Sibling Selector: The general sibling selector selects all elements that are siblings of a specified element.
+The following example selects all <p> elements that are siblings of <div> elements:
+
+div ~ p {
+ background-color: red;
+}
+
+*/
+input { /*Input gère l'intéraction du coeur*/
+  position: absolute; /*Hérite de la position relative de container*/
+  opacity: 0; /* pour ètre invisible car les coeurs nous intérrèse.*/
+  cursor: pointer; /*pour ne pas détonner avec la carde sur la forme du curseur en DESKTOP*/
+  width: 20px; /*Taille de la zone d'input du coeur donc son fonctionnement*/
   height: 20px;
   z-index: 3;
 }
 
 .fa-heart {
-  font-size: 26px;
+  font-size: 26px; /*Taille du coeur en font-size car 
+font awesome mais aussi car le background 
+est sur la taille du texte donc font size.*/
 }
 
-/*QUAND LA CHECKBOX EST CHECK*/
+/*Sur le clique de la checkbox */
 input:checked ~ .fa-heart-regular {
   transition-duration: 0.5s;
-  opacity: 0;
+  opacity: 0; /*échange d'opaciter repasse a 1 quand unchecked*/
 }
 
-/*QUAND LA CHECKBOX EST CHECK*/
+/*Sur le clique de la checkbox*/
 input:checked ~ .fa-heart-solid {
   transition-duration: 0.5s;
-  opacity: 1;
+  opacity: 1; /*ehcnage d'opaciter de fa-heart solid qui est de 0*/
 }
 
 #container {
@@ -135,7 +182,7 @@ input:checked ~ .fa-heart-solid {
     opacity: 1;
   }
 }
-@keyframes animation {
+@keyframes loadingspinner {
   0% {
     stroke-dasharray: 1 98;
     stroke-dashoffset: -105;
@@ -154,19 +201,19 @@ input:checked ~ .fa-heart-solid {
   }
 }
 #spinner {
-  transform-origin: center;
-  animation-name: animation;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  fill: transparent;
-  stroke: #ff79da;
-  stroke-width: 7px;
-  stroke-linecap: round;
+  transform-origin: center; /*Centre l'animation"*/
+  animation-name: loadingspinner; /*Appel la keyframe loadingspinner*/
+  animation-duration: 3s; /*Durer de jeu de l'animation"*/
+  animation-iteration-count: 1; /*Nombre de fois ou l'animation est jouer "Redodant car n'arrête pas l'animation"*/
+  animation-fill-mode: forwards; /*Arrête l'animation*/
+  fill: transparent; /*Gère la couleur d'arrière plan*/
+  stroke: #ff79da; /*Gère la couleur de chaque objet*/
+  stroke-width: 7px; /* Gère l'épaisseur de chaque objet*/
+  stroke-linecap: round; /*Arrondi le début et la fin de chaque objet*/
   filter: url(#shadow);
 }
 
-.teste {
+.checkmark {
   background-color: #99e2d0;
   width: 0;
   height: 117%;
