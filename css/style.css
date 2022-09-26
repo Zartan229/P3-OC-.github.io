@@ -517,6 +517,7 @@ input:checked ~ .fa-heart-solid {
 @media (min-width: 767px) {
   .background__image {
     height: 500px;
+    object-fit: cover;
   }
 }
 
